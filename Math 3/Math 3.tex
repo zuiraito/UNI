@@ -1,0 +1,88 @@
+\documentclass[twocolumn]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Math 3}
+\author{Lecture notes by Rangi}
+\date{\today}
+\maketitle
+
+\begin{abstract}
+	Abstract Here
+\end{abstract}
+
+\section{Introduction}
+	\paragraph{Previously:}
+	we had equations like 
+	\begin{equation}
+	y ^{2}+4y+1=0 
+	\end{equation}
+	where the solution is a number.
+	\begin{equation}
+		\int_{a}^{b} f(x) dt = \text{number} = F(b)-F(a)	
+	\end{equation}
+	\paragraph{New:}
+	$ f'(x) $ is given, determine $ f(x) $. The solution is a function.
+	\begin{equation}
+		\begin{split}
+			\text{Velocity}(t) & = \text{Position}'(t)~~~~  \text{given}  \\
+					   & = \text{Position}(t)~~~~~  \text{wanted}
+		\end{split}
+	\end{equation}
+	\subsection{Differential equations}
+	\paragraph{Example:}
+	Interest rate
+	\begin{equation}
+	\begin{split}
+		y(t):~~~~ & \text{assets at time }t \\
+		\lambda<0:~~~~ & \text{constant interest rate}
+	\end{split}
+	\end{equation}
+	[...]
+	
+	
+\section{First-order DE}
+\paragraph{For now:}
+$ m=1,n=1 $ 
+\paragraph{Consider:}
+$ y'(x)=f(x,y(x)) $ explicit form of ODE\\\\
+Function $ f $ is defined on
+\begin{equation}
+D=Dx\times Dy\in\mathbb R ^{2}
+\end{equation}
+\paragraph{Ex.}
+Strip: [...]
+\subsection{Geometric interpretation: Direction field}
+[...]
+\subsection{Observations}
+\begin{enumerate}
+	\item Through each point $ (x_0,y_0)\in D $ there passes exactly one solution
+	\item Each solution curve is maximal (no blow up)
+	\item Solution curves don't intersect 
+\end{enumerate}
+\subsection{Existence and Uniqueness of a solution to ODE}
+	JVP:$~~~~ y'=f(x,y),y(x_0)=y_0,$ domain D
+	\paragraph{Theorem (Peano):}
+	Assume that $f$ is continuous on $D$ and $(x_0,y_0)\in D$. Then if JVP has at least one solution. This solution is maximal ... we can continue solv. until the boundary D.
+	\paragraph{Theorem (PicardLindelöt):}
+	Let $f$ be continuous on $D$ and let $f$ be cont. diff. with respect $y$. ($\rightarrow$ Lipschitz cont.) Let $(x_0,y_0)\in D$. Then the IVP has a unique solution.
+	\paragraph{Ex.:}
+	\begin{equation}
+		\begin{split}
+		(x ^{2}-x)y'=(2x-1)y ~~~~~~&\text{implicit form}\\
+		y'=\frac{2x-1}{x ^{2}-x}*y ~~~~~& \text{explicit form}
+	\end{split}
+	\end{equation}
+	[...]
+	\begin{enumerate}
+		\item $x_0\not\in \{0;1\}\rightarrow$ unique sol. (due to Picard-Lindelöf Thm.)
+		\item $x_0\in \{0;1\}\rightarrow$ infinitely many solutions
+	\end{enumerate}	
+
+	
+	
+
+\end{document}
