@@ -74,7 +74,7 @@
 					   & = \text{Position}(t)~~~~~  \text{wanted}
 		\end{split}
 	.\]
-	\subsection{Differential equations}
+	\subsection{Differential Equations}
 	\begin{multicols}{2}
 	\paragraph{Example:
 	Interest rate}
@@ -125,7 +125,7 @@
 	y'(t)=  \lambda &\cdot y(t)
 	\end{split} 
 	.\]
-\subsection{Problem Solving Steps in Science \& technology}
+\subsection{Problem Solving Steps in Science \& Technology}
 	"Reality" $ \longrightarrow $ Model = "Mathematisation"
 	\begin{itemize}
 		\item Laws of nature (Physics, Chemistry).
@@ -168,7 +168,7 @@
 		\item Vibrations in automobiles; reliability of structures. (earthquakes; spring-mass-system)
 	\end{enumerate}
 	
-	\subsection{Application: Electric ciruits}
+	\subsection{Application: Electric Ciruits}
 	\paragraph{Ohm's Law:} $ U=R \cdot I $ (voltage = resistance * current)
 	\paragraph{Kirchhoff's Cirquit Laws:} $\rightarrow$ System of ODEs
 	\paragraph{Law of Induction:} $ U=n \cdot I' $ (Coil); $ I = C \cdot U' $ (Capacitor). Here the $'$ is the time derivative.
@@ -276,7 +276,7 @@ For now we have $ m=1,n=1 $. Consider $y'(x)=f\big(x,y(x)\big)$. The \textbf{exp
 	\end{tikzpicture}
 	\end{center}
 	
-\subsection{Geometric interpretation: Direction field}
+\subsection{Geometric Interpretation: Direction Field}
 \begin{multicols}{2}
 \begin{center}
 \begin{tikzpicture}
@@ -400,7 +400,7 @@ $f(x,y)$: Slop of tangent line of $y(x)$ in point $(x,y)$. Using software like \
 	\end{enumerate}
 \subsection{Examples and Recap}
 \[
-	IVP
+	\text{IVP}
 	\begin{cases} 
 		y' & =\lambda y, \\
 		y(x_0) & =y_0.
@@ -485,7 +485,7 @@ $f(x,y)$: Slop of tangent line of $y(x)$ in point $(x,y)$. Using software like \
 		y & =\tilde c \cdot e ^{(...)},\quad \tilde c\in \mathbb R
 	\end{split}
 	\]
-	\subsection{Application: Water container}
+	\subsection{Application: Water Container}
 	\paragraph{Given::} Cross-section area of cylindrical container $A$ and cross-section area of (circular) outlet $B$.
 	\paragraph{Toricelli's Law:} 
 	\[
@@ -600,7 +600,7 @@ $f(x,y)$: Slop of tangent line of $y(x)$ in point $(x,y)$. Using software like \
 		\end{axis}
 	\end{tikzpicture}
 	\end{center}
-	\paragraph{Complete solution:} 
+	\paragraph{Complete Solution:} 
 	\[
 	h(t) =
 	\begin{cases} 
@@ -617,7 +617,7 @@ $f(x,y)$: Slop of tangent line of $y(x)$ in point $(x,y)$. Using software like \
 	\]
 	\end{multicols}
 
-	\subsection{Linear DE of first order}
+	\subsection{Linear DE of first Order}
 	\paragraph{Standard form:} $ y'(x)=+p(x)y(x)=r(x) \quad$ \textcolor{blue}{$p,r$ can be nonlinear functions in $x$}\\
 	DE is linear in $y,y'$, not allowed are terms like $(y') ^{2},\sin(y),y \cdot y'$ etc.
 	\[
@@ -648,7 +648,7 @@ $f(x,y)$: Slop of tangent line of $y(x)$ in point $(x,y)$. Using software like \
 				b\not=0\quad & \text{inhomogeneous linear system of equations.}
 			\end{split}
 		\]
-		\subsection{General solution of the homogeneous DE}
+		\subsection{General Solution of the homogeneous DE}
 		\[
 		\begin{split}
 			y*(x) + p(x)y(x)= & ~0\quad\quad y'= \frac{dy}{dx}  \\
@@ -678,7 +678,7 @@ $f(x,y)$: Slop of tangent line of $y(x)$ in point $(x,y)$. Using software like \
 		\frac{dF}{dx}=p(x) \cdot  \frac{dx}{dx}-p(x) \frac{dx_0}{dx}+0 =p(x)
 		.\]
 		by the Leibniz rule for parametric integrals.
-\subsection{General solution for inhomogeneous DE}
+\subsection{General Solution for inhomogeneous DE}
 Let $y_1,y_2$ denote solutions of the inhomogeneous DE:
 \[
 \begin{split}
@@ -722,7 +722,7 @@ Insert ansatz in the inhomogeneous DE (product rule!)
 	c(x)= \int_{x_0}^{x} e ^{P(z)}r(z) dz+\tilde c
 .\]
 \paragraph{Summary:} $y_ \text{ \textcolor{red}{$P$}}(x)=c(x) e ^{-P(x)}$
-\subsection{Electrical circuit}
+\subsection{Electrical Circuit}
 \begin{equation}
 L \cdot I'(t)+R \cdot I(t)=U\in(\omega t)
 \end{equation}
@@ -744,10 +744,11 @@ Current $I=I(t)$, dependent on variable.\\
 	$Ly_p'(t)+Ry_p(t)=U\sin(\omega t)$\\
 	$Lc*(t)e ^{-R \frac{t}{L}}+Lc(t)\big(- \frac{R}{L}\big) e ^{-R \frac{t}{L}}+Rc(t) e ^{-R \frac{t}{L}}=U\sin(\omega t)$
 	\[
-	c'(t)= \underbrace{ \frac{U}{L}\sin (\omega t e ^{R \frac{t}{L}}}_\text{ \parbox{13em}{Integrate with respect to $t$. Integration by parts $2x$}}	.\]
+	c'(t)= \underbrace{ \frac{U}{L}\sin (\omega t e ^{R \frac{t}{L}})}_\text{ \parbox{13em}{Integrate with respect to $t$. Integration by parts $2x$}}	.\]
 	\[
-	c(t)=U e ^{R \frac{t}{L}} \cdot \frac{R \sin (\omega t -\omega \cos(\omega t)}{R ^{2}+ \omega ^{2} L ^{2}}
+	c(t)=U e ^{R \frac{t}{L}} \cdot \frac{R \sin (\omega t) -\omega \cos(\omega t)}{R ^{2}+ \omega ^{2} L ^{2}}
 	.\]
+\end{enumerate}
 \subsection{Bernoulli DE (nonlinear DE}
 \begin{equation}
 y'+p(x)y=r(x)y ^{\alpha},\quad \alpha \in \mathbb R
@@ -788,5 +789,283 @@ $y(t)$: population density,  $y\ge 0$
 \]
 	\textcolor{red}{nonlinear DE $\rightarrow$ Bernoulli DE, $\alpha = 2$}\\
 	\textcolor{red}{$p(x)=-a,\quad r(x)=- \frac{a}{y_\infty}$}
+	\paragraph{Ansatz:} $u(t)=y(t) ^{1-\alpha}=y ^{-1}(t)\quad \text{ \textcolor{red}{$[\alpha = 2]$}}$\[
+	\begin{split}
+		u' &=-y ^{-2}(t) \cdot y'=-y ^{-2}(ay- \frac{a}{y_\infty}y ^{2})\\
+		   &=-au+ \frac{a}{y_\infty}\\
+	\end{split}
+	.\]
+	\textcolor{gray}{homomegous DE: $U'=-au$}
+	\begin{enumerate}
+		\item $u_{hom}0(t)=c \cdot e ^{-at},\quad c\in \mathbb R $
+		\item Variation of constants: $u_p(t)=c(t) e ^{-at}$\\
+			... $c'(t)=e ^{at}e ^{-at}= \frac{1}{y_\infty}\quad$ \textcolor{gray}{constant function!}\\
+			Check: \[
+				\begin{split}
+					u_p' &=-au_p+ \frac{a}{y_\infty}\\
+					0 &= \frac{-a}{y_\infty}+ \frac{a}{y_\infty}
+				\end{split}
+			\]
+		\item $u(t)=u_{hom}(t)+u_p(t)\quad$ \textcolor{gray}{$\longleftarrow$ general solution}\\
+			$\quad=c e ^{-at} + \frac{1}{y_\infty}=y_\infty ^{-1}(1+cy_\infty e ^{-at})$
+		\item Initial condition:
+			\[
+			\begin{split}
+				y(0) &= y_0\\
+				u(0) &= \frac{1}{y(0)}= \frac{1}{y_0}\\
+				\frac{1}{y_0}= u(0)= \frac{1}{y_\infty}+c &\rightarrow c= \frac{1}{y_0}- \frac{1}{y_\infty}= \frac{y_\infty -y_0}{y_0y_\infty}
+			\end{split}
+			\]
+		\item $y(t)=u(t) ^{-1}= \underbrace{\frac{y_\infty}{1+( \frac{y_\infty - y_0}{y_0}) e ^{-at}}}_ \text{Solution of the IVP}$\\
+		Observe: $ \lim_{t\to+\infty} y(t)= \dfrac{y_\infty}{1+(...) \cdot 0}=y_\infty $
+	\item Remark: \textcolor{teal}{Stationary solutions:} $\quad\quad y'=ay(1- \frac{y}{y_\infty}=:f(y)$
+		\begin{itemize}
+			\item zero of $f$
+			\item $y_1\equiv 0$
+			\item $y_2\equiv y_\infty$
+		\end{itemize}
+		\textcolor{gray}{Note: The symbol $\equiv$ means a functions is constant equal to the right-hand side.}
+	\end{enumerate}
+\subsection{Order Reduction}
+\textcolor{teal}{Autonomous} 2nd order DE.
+\[
+F(y,y',y'')=0
+.\]
+\[
+	y=y(x)\quad\parbox{20em}{ \textcolor{teal}{The independent variable $x$ does not occur explicitly in the DE}}
+.\]
+\paragraph{Idea:} Consider $y$ as independent variable and $v= \frac{dy}{dx}=v(y)$ as dependent variable.
+\[
+\begin{split}
+	& F(y,\underbrace{v(y)}_{=y'},?)=0\\
+	& y''= \frac{dy'}{dx}= \frac{dv}{dx}= \frac{dv}{dy} \cdot \frac{dy}{dx}= \frac{dv}{dy} \cdot v(y)\\
+\end{split}
+\]
+\paragraph{Summary:} $F(y,v(y),v(y) \cdot \frac{dv}{dy})=0$
+\paragraph{Step 1:} Solve 1st order DE to obtain $v=v(y)$.
+\paragraph{Step 2:} \[
+\begin{split}
+	\frac{dy}{dx} &=v(y)\quad  \text{1st order DE for $y$}\\
+	\frac{dy}{v(y)} &= dx \quad \text{Separtation of the variables!}
+\end{split}
+\]
+\subsection{Example: Oscillation}
+A mass $m$ is secured to the wall with a spring (coefficient $k$) allowing vertical translation $y=y(t)$.
+\[
+m \cdot  y'' +k \cdot y=0
+\]
+Order reduction: $F(y,y',y'')= m \cdot y'' +k \cdot y=0$
+\textcolor{teal}{Variable $t$ does not occur explicitly in DE $\to$ autonomous DE}\\
+\begin{tabular}{@{}l l}
+	$m >0$ & mass\\
+	$k > 0$ & spring constant\\
+\end{tabular}
+\paragraph{Ansatz:} $v=v(y)=y'\longrightarrow y''=v(y) \cdot \frac{dv}{dy}$
+\paragraph{DE:} \[
+\begin{split}
+	my''+ky &=0\quad\quad\quad \text{ \textcolor{gray}{$y$: independent variable}}\\
+	mv \frac{dv}{dy}+dy &=0 \quad\quad\quad \text{ \textcolor{gray}{$v$: dependent variable}}\\
+\end{split}\]
+\begin{enumerate}
+	\item Seperation of var.
+		\[
+		\begin{split}
+			v \frac{dv}{dy} &=- \frac{k}{m}y\\
+			\int v dv &=- \frac{k}{m} \int ydy +\underbrace{\tilde c}_{\ge 0}\\
+			\frac{1}{2}v ^{2} &= - \frac{1}{2} \frac{k}{m}y ^{2} +  \frac{1}{2}c_1 ^{2}\\
+		v= v(y) &= \pm (c_1 ^{2} - \frac{k}{m}y ^{2}) ^{ \frac{1}{2}}\\
+		\end{split}
+		\]
+	\item $y'=\pm (c_1 ^{2} - \frac{k}{m}y ^{2}) ^{ \frac{1}{2}}$\\
+		Solve my separation of var. $y=y(t),y'= \frac{dy}{dt}$
+		\[
+			\underbrace{\pm \int \frac{dy}{\big(c_1 ^{2} - \frac{k}{m}y ^{2}\big)}}_{ \text{ \textcolor{teal}{$(*)$}}}= \int dt +c_2
+		.\]
+		Note: $\big( \frac{1}{|\alpha|\arcsin (\alpha y)}\big)'= \frac{1}{|\alpha|} \cdot \alpha \cdot \frac{1}{\sqrt{1-\alpha ^{2}y ^{2}}}=\pm \frac{1}{\sqrt{1-\alpha ^{2} y ^{2}}}$
+		\[
+		\begin{split}
+			\text{\textcolor{teal}{$(*)~$}} &= \frac{\pm1}{|c_1|} \int \frac{dy}{\big(1- \frac{k}{m} \frac{1}{c_1 ^{2}}y ^{2}\big) ^{ \frac{1}{2}}}\\
+							&= \frac{1}{|c_1|} \sqrt{ \frac{k}{m}} ^{-1}|c_1| \arcsin\Bigg(\sqrt \frac{k}{m}c_1 ^{-1} y\Bigg) \\
+		\end{split}
+		\]
+		\[
+		\begin{split}
+			\sqrt \frac{k}{m} ^{-1} \arcsin\Big( \sqrt \frac{k}{m}c_1 ^{-1}y\Big) &= t+c_2\\
+			\arcsin\Big(\sqrt \frac{k}{m}c_1 ^{-1}y\Big) &= \sqrt \frac{k}{m}t+\tilde c_2\\
+			\sqrt \frac{k}{m}c_1 ^{-1} y &= \sin\Big(\sqrt \frac{k}{m}t+\tilde c_2\Big)\\
+			y &=\sqrt \frac{m}{k}c_1 \sin\Big(\sqrt \frac{k}{m}t+\tilde c_2\Big)\\
+			y(t) &= \text{ \textcolor{red}{$\tilde c_1$}} \sin\Big(\sqrt \frac{k}{m}t+ \text{ \textcolor{red}{$\tilde c_2$}}\Big)\\
+		\end{split}
+		\]
+		\textcolor{red}{$\to$ two parameters in general solution}
 \end{enumerate}
+\section{Second-order Linear Differential Equations}
+\subsection{Standard Form}
+\[
+\text{IVP}
+\begin{cases} 
+	y''(x)+p(x)y'(x)+q(x)y(x)  = r(x) & \\
+	  \begin{aligned} 
+	 	&y(x_0) =y_0 \\
+	 	&y'(x_0) =y_0'
+\end{aligned}
+\bigg\} \text{ \textcolor{teal}{initial conditions}} 
+					  & 
+\end{cases}
+\]
+Existance and uniqueness of solution for $p,q,r$ continuous ($\to$ Picard-Lindelöf).
+\paragraph{Idea:} Rewrite IVP as system of two 1st order DEs
+\paragraph{Concepts:}$~$\\ 
+\begin{tabular}{@{}l l}
+	$r(x)\equiv0$ &homogeneous DE\\
+	$r(x)\not\equiv0$ &inhomogeneous DE
+\end{tabular}\\
+\textcolor{gray}{(see 1st order DEs)}
+\paragraph{Solution:} $y(x)=y_\text{hom}(x)+y_p(x)$
+\[
+	\parbox{10em}{general solution of inhomoegnous DE} =
+	\parbox{7em}{general solution of hom. DE} +
+	\parbox{10em}{(one) particular solution of inhomog. DE}
+.\]
+\[
+\begin{split}
+	y_\text{hom}'' &+p(x)y'_ \text{hom}(x)+q(x)y_ \text{hom}(x) =0\\
+	y''_p(x) &+p(x)y_p'(x)+q(x)y_p(x) =r(x)\\
+\end{split}
+\]
+\textcolor{teal}{$y_\text{hom}$ has TWO parameters ($\to$ two initial conditions)}
+\subsection{Superposition Principle}
+Let $y_1,y_2$ denote solutions of the homogeneous DE.
+\paragraph{Superposition \textcolor{teal}{= linear combination}:}
+\[
+	y(x):= \underbrace{a}_ \text{constant} \cdot y_1(x) + \underbrace{b}_ \text{constant} \cdot y_2(x)
+.\]
+\[
+\begin{split}
+	\text{ \textcolor{blue}{$y'(x)$}} &= ay_1'(x)+by_2'(x)\\
+	\text{ \textcolor{teal}{$y''(x)$}} &= ay_1''(x)+by_2''(x)
+\end{split}
+\]
+\[
+\begin{aligned}
+\begin{aligned}
+	\text{ \textcolor{teal}{$y_1''(x)$}}+\text{ \textcolor{blue}{$p(x)y_1'(x)$}}+q(x)y_1(x) &= 0\quad| \cdot a\\
+	\text{ \textcolor{teal}{$y_2''(x)$}}+\text{ \textcolor{blue}{$p(x)y_2'(x)$}}+q(x)y_2(x) &= 0\quad| \cdot b
+\end{aligned}
+& \quad\Big]+\\
+	\text{ \textcolor{teal}{$y''(x)$}}+\text{ \textcolor{blue}{$p(x)y'(x)$}}+q(x)y(x) = 0\quad\quad~~ & \\
+\end{aligned}
+\]
+\begin{itemize}
+	\item Any superposition  of solutions of homogeneous DE is again a solution of homogeneous DE.
+	\item General solution of inhomegeneous DE has the form: \[
+	y(x)=c_1 \cdot y_1(x)+ c_2 \cdot y_2(x) +y_p(x)
+	.\]
+\end{itemize}
+\paragraph{Question:} Under which conditions can we choose $c_1$ and $c_2$ such that we can impose any pair $(x_0, y_0)$ and $(x_0,y_0)$ or initial conditions?
+\paragraph{Answer:} $y(x_0)=y_0$ and $y'(x_0)=y_0'$
+\paragraph{Ansatz:} $y(x)=c_1y_1(x)+c_2y_2(x)+y_p(x)$
+\paragraph{Initial conditions:} \[
+\text{ \textcolor{gray}{$(x)$}} 
+\begin{cases} 
+	c_1y_1(x_0)+c_2y_2(x_0) &= \overbrace{y(x_0)}^{=!y_0}-y_p(x), \\
+	c_1y_1'(x_0)+c_2y_2*(x_0) &= \underbrace{y'(x_0)}_{=!y_0'}-y_p'(x_0) .
+\end{cases}
+.\]
+\textcolor{gray}{Note that $(*)$ is a $2\times 2$ linear system of equns for unknowns $c_1,c_2$}
+\[
+\underbrace{\begin{pmatrix}
+	y_1(x_0) & y_2(x_0) \\
+	y_1'(x_0) & y_2'(x_0) \\
+\end{pmatrix}}_A 
+\underbrace{ \begin{pmatrix}
+c_1 \\ c_2 \\
+\end{pmatrix}}_{\vec c}
+=
+\underbrace{ \begin{pmatrix}
+y_0 -y_p(x_0) \\ 
+y_0' -y_p'(x_0) \\ 
+\end{pmatrix}}_{\vec b\in \mathbb R ^{2}}
+.\]
+The vector $\vec b\in \mathbb R ^{2}$ takes on arbitrary values. To ensure that $A\vec c = \vec b$ has a section we require: $\det A =|A|\not=0\quad$ \textcolor{gray}{$A$ is an invertable matrix}
+\[
+	\begin{split}
+		w(y_1,y_2)\Big|_{x=x_0} : &=
+	\begin{vmatrix}
+	y_1(x_0)~ & ~y_2(x_0) \\
+	y_1'(x_0)~ & ~y_2'(x_0) \\
+	\end{vmatrix} \begin{matrix}
+	- \\ + 
+	\end{matrix}\\
+					  &=y_1(x_0)y_2'(x_0)-y_1'(x_0)y_2(x_0)\not=0\\
+	\end{split}
+\]
+\begin{tabular}{c c l}
+	$w$ & : & \textcolor{teal}{Wronski determinant} (function of $x$!)\\
+	$w$ & = & $w(x)$ \\
+	$w_{(y_1,y_2)}(x)$& = & a
+\end{tabular}
+\paragraph{Recall:} $y''(x)+p(x)y'(x)+q(x)y(x)=r(x)$
+\paragraph{General solution:} $y(x)=c_1y_1(x)+c_2y_2(x)+y_p(x),\quad c_1,c_2\in \mathbb R$\\
+\begin{tabular}{l c l l}
+	$y_p$ & : & some solution of inhom. DE & \textcolor{red}{$r(x)\not=0$}\\
+	$y_1,y_2$ & : &solutions of hom. DE & \textcolor{teal}{$r(x)\equiv 0$}\\
+\end{tabular}
+\paragraph{Important condition:} $w_{(y_1,y_2)}(x)\not=0$
+\[
+	w_{(y_1,y_2)}(x)=
+	\begin{vmatrix}
+		y_1(x) & y_2(x) \\
+		y_1'(x) & y_2'(x)
+	\end{vmatrix}
+.\]
+\subsection{Fundamental System ("basis")}
+\paragraph{Definition:} Let $y_1,y_2$ be solutions of the homogeneous DE. $y_1$ and $y_2$ are called \underline{fundamental system} if $w_{(y_1,y_2)}(x)\not=0$ for all $x$ in a suitable interval $[a,b]$.
+\paragraph{Ex.:} 
+\begin{multicols}{2}
+$y''(x)-y(x)=0$\\
+$y_1(x)=e ^{x}$\\
+$y_2()= e ^{-x}$
+\begin{center}
+\begin{tikzpicture}
+	\begin{axis}[
+		axis lines = center,
+		xlabel = \(x\),
+		ylabel = {\(y\)},
+		xmin=-2, xmax=2,
+		ymin=0, ymax=4,
+		xtick={0}, xticklabels={0},
+		ytick={1}, yticklabels={1},
+		x label style={at={(axis description cs:1,-0.05)},anchor=north},
+	]
+		\addplot [
+			domain=-2:2,
+			samples=100,
+			color=purple,
+			]
+			{exp(x)};
+		\addlegendentry{\(e ^{x}\)}
+		\addplot [
+			domain=-2:2,
+			samples=100,
+			color=teal,
+			]
+			{exp(-x)};
+		\addlegendentry{\(e ^{-x}\)}
+	\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{multicols}
+\[
+w(y_1,y_2)= \begin{vmatrix}
+	e ^{x} & e ^{-x}\\ e ^{x} & -e ^{-x}
+\end{vmatrix} = -1-1)-2\not=0
+.\]
+$\Rightarrow \{y_1;y_2\}$ is a fundamental system for the DE $y''-y=0$
+\paragraph{Ex.:} $y''(x)-y'(x)=0,\quad y_1(x)=e ^{x},\quad y_2(x),\equiv 1$
+
+
+
+
+
 \end{document}
