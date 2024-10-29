@@ -1063,9 +1063,133 @@ w(y_1,y_2)= \begin{vmatrix}
 .\]
 $\Rightarrow \{y_1;y_2\}$ is a fundamental system for the DE $y''-y=0$
 \paragraph{Ex.:} $y''(x)-y'(x)=0,\quad y_1(x)=e ^{x},\quad y_2(x),\equiv 1$
-
-
-
-
+\[
+w(y_1),y(y_2) = \begin{vmatrix}
+	e ^{x} & 1 \\ e ^{x} & 0\\
+\end{vmatrix} = 0- e ^{x}= -e ^{x}\not=0
+.\]
+$\Rightarrow \{y_1;y_2\}$ is a fundamental system for the DE $y''-y'=0$
+ \paragraph{Remark:} $w=w(x)$ satisfies a 1st order DE:
+ \[
+	 w'= (y_1y_2'-y_1'y_2) ' = y_1'y_2'+\underbrace{y_1y_2'''-y_1''y_2}{=w'}-y_1'y_2'
+ .\]
+ \[\begin{split}
+ 	y_1''+p(x)y_1'+q(x)y_1(x) & =0\quad| \cdot (-y_2) \\
+ 	y_2''+p(x)y_2'+q(x)y_2(x) & =0\quad| \cdot y_1
+\end{split}\Big]+\]
+\[
+w'(x)+p(x)w(x)+0=0
+.\]
+1st order linear homogeneous DE $\to$ separation of variables
+\paragraph{Solution:} $w(x)= \underbrace{w(x_0)}_{ \text{initial condition}} \cdot  \underbrace{e ^{- \int_{x_0}^{x} p(z)dz}}_{ >0} $\\
+Hence we conclude that only \textcolor{purple}{two cases} are possible:
+\begin{enumerate}
+	\item $w(y_1(x),y_2(x)) \equiv 0\quad$ for all  $x$,
+	\item $w(y_1(x),y_2(x)) \not=0\quad$ for all $x$.
+\end{enumerate}
+\paragraph{Ex.:} $w(x)\equiv -2$ 
+\paragraph{Ex.:} $w(x)=-e ^{x}\not=0$ for all $x$ 
+\paragraph{Question:} What happens in the case $w(y_1,y_2)\equiv 0$?\\
+$ \{y_1;y_2\}$ is not a fundamental system.
+\begin{equation}
+y_1y_2'-y_1'y_2=0 \text{ for all } x;\quad y_1,y_2 \not=0
+\end{equation}
+Let's consider the quotient $ \frac{y_1}{y_2}$:
+\[
+\frac{y_1}{y_2}'= \frac{y_1'y_2-y_1y_2'}{y_2 ^{2}}=0\quad \text{by (3)}
+.\]
+Hence $ \frac{y_1}{y_2}$ is constant in $x$! We conclude:
+\[
+y_1(x)=\tilde c \cdot y_2(x),\quad \tilde c\in \mathbb R \backslash \{0\}
+.\]
+$\Rightarrow$  $y_1$ and $y_2$ are not linearly independent and are \textcolor{purple}{no basis} / fundamental system for the homogeneous DE.
+\paragraph{Ex:} $y_1(x)= e ^{x}\quad y_2(x)=e ^{-x}$ :
+$ \frac{y_1}{y_2}$ is not a constant $\to$ basis.
+\paragraph{Ex:} $y_1(x)= e ^{x}\quad y_2(x)\equiv_0$ :
+$ \frac{y_1}{y_2}$ is not a constant $\to$ basis.
+\paragraph{Next goal:} Construct $y_1$ and $y_2$
+\subsection{Method of Lagrange}
+\paragraph{Setting:} $y_1$ is already known; how to calculate $y_2$?
+\begin{equation}
+y_1''+p(x)y_1'+q(x)y_1=0
+\end{equation}
+\paragraph{Ansatz:} $y_2(x)=u (x) y_1 (x) \quad$ $u(x)$ is not a constant function!
+\[\begin{split}
+	y_2' & = u'y_1+uy_1'\quad \text{(product rule)} \\
+	y_2'' & =u''y_1+u'y_1'+u'y_1'+uy_1''
+\end{split}\]
+\[\begin{split}
+	0 & = y_2''+py_2'+qy_2 \\
+	 & = u''y_1+u'y_1'+u'y_1'+uy_1''+pu'y_1+puy_1'+quy_1\\
+	 &= u''y_1+2u'y_1'+uy_1''+pu'y_1+puy_1''+quy_1\\
+	 &= u''y_1+u'(2y_1'+py_1)+u \underbrace{(y_1'''+py_1''+qy_1)}_{=0 \text{ by (4)}}\\
+	 &= u''y_1+u'(2y_1'+py_1)\\
+\end{split}\]
+\paragraph{Substitution:} $v=u'\quad v'=u''\quad v=v(x)$
+ \[
+0=v'y_1+v(2y_1'+py_1)\quad \parbox{20em}{ \textcolor{purple}{1st order homogeneous DE inv $y_1\not=0$}}
+.\]
+\paragraph{Rearrange:} 
+\[
+v'+v(2 \frac{y_1'}{y_1}+p)=0\quad\leftarrow \text{separation of variables}
+.\]
+Obtain one (!) solution $v(x)=exp(...) >0$ 
+\paragraph{Back substitution:} \[\begin{split}
+	u'(x) &= v(x) \\
+	u(x) &= \int exp(...) dz >0
+\end{split}\]
+Hence $u(x)$ is not a constant function!
+\subsection{Example}
+\begin{equation}
+x(x-1)y''(x)=xy'(x)+y(x)=0
+\end{equation}
+Standard form of (5):
+\[
+y''(x)-(x-1) ^{-1}y'(x)+x ^{-1} (x-1) ^{-1} y(x)=0
+.\] 
+unique solution for $x\not=0$ and $x\not=1$.  \textcolor{purple}{We consider $x >1$}
+\begin{enumerate}
+	\item $y_1=x$ solves (5).  \[
+	0-(x-1) ^{-1} \cdot 1+ x ^{-1}(x-1) ^{-1}x=0
+	.\]
+\item Method of Lagrange:
+	\[
+	y_2(x)=u(x) \cdot y_1(x)=u(x) \cdot x
+	.\]
+	\[
+	y_2'=u' \cdot x +u,\quad y_2''=u'' x+ u' \cdot 2
+	.\]
+	Insert in DE (5):
+	\[\begin{aligned}
+		x(x-1)(u'' \cdot  x+2u')-x(u' \cdot x+ u)+ u \cdot x &=0  \\
+		u'' \cdot x ^{2} (x-1) +u'(2x ^{2}-2x-x ^{2}) &=0\\
+		u'' \cdot x \cdot (x-1) + u' \cdot (x-2) &=0\\
+	\end{aligned}\]
+\item Substitution $v=u'$
+	 \[
+	v' \cdot x \cdot (x-1) +v \cdot (x-2) = 0,\quad \frac{dv}{dx}=v'
+	.\]
+	\[\begin{split}
+		x \cdot (x-1) \cdot \frac{dv}{dx} & = -(x-2) \cdot v \\
+		\int \frac{dv}{v} & =-\int \frac{x-2}{x \cdot (x-1)} dx \text{ \textcolor{purple}{$0$}} \parbox{13em}{only one solution, not general solution}\\
+		\ln |v| &=...\\
+	\end{split}\]
+	\[\begin{split}
+		v(x) & = \frac{x-1}{x ^{2}}= \frac{1}{x}- \frac{1}{x ^{2}}=u'(x) \\
+		u(x) & = \ln|x| + \frac{1}{x}= \ln x + \frac{1}{x} \text{ for } x >1\\
+		y_2(x) &= u(x) \cdot y_1(x) = x \cdot \ln x +1 \\
+	\end{split}\]
+\end{enumerate}
+\subsection{Inhomogeneous DE and Variation of Constants}
+\paragraph{Standard form:} \begin{equation}
+y''+p(x)y'+q(x)y=r(x)
+\end{equation}
+\paragraph{Fundamental system:} $ \{y_1;y_2\}$
+\[\begin{split}
+	y_1''+py_1'+q & =0 \\
+	y_2''+py_2'+q & =0\\
+	W=y_1y_2'-y_2y_1' &\not=0
+\end{split}\]
+\paragraph{Goal:} Construct a particular solution $y_p$ of the DE (6).
 
 \end{document}
